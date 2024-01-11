@@ -1,2 +1,2 @@
-#!/bin/bash
-chmod +x generate_asm.sh
+#!/bin/bashh
+./generate_asm.sh main.c
