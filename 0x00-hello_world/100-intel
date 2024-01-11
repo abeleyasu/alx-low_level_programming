@@ -1,18 +1,2 @@
 #!/bin/bash
-
-# Get the C file name from the environment variable
-CFILE=$1
-
-# Check if the C file name is provided
-if [ -z "$CFILE" ]; then
-    echo "Usage: $0 <C_FILE>"
-    exit 1
-fi
-
-# Extract the base name (without extension) of the C file
-BASENAME=$(basename -s .c "$CFILE")
-
-# Generate the assembly code using gcc with Intel syntax
-gcc -S -masm=intel "$CFILE" -o "$BASENAME.s"
-
-echo "Assembly code has been generated and saved to $BASENAME.s"
+chmod +x generate_asm.sh
