@@ -1,2 +1,2 @@
-#!/bin/bashh
-./generate_asm.sh main.c
+#!/bin/bash 
+gcc -S -masm=intel $CFILE -o "${CFILE%.c}.s"
