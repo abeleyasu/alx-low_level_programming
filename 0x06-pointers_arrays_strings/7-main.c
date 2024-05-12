@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code for
@@ -11,22 +12,7 @@ int main(void)
     char *p;
 
     p = leet(s);
-    while (*p)
-    {
-        _putchar(*p);
-        p++;
-    }
+    printf("%s", p);
+    printf("%s", s);
     return (0);
-}
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-    return (write(1, &c, 1));
 }
