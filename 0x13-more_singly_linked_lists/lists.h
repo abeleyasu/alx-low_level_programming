@@ -18,8 +18,7 @@ typedef struct listint_s
 } listint_t;
 
 /* Function prototypes */
-size_t print_listint(const listint_t *h);
-listint_t *add_nodeint_end(listint_t **head, const int n);
-void free_listint2(listint_t **head);
+size_t print_listint_safe(const listint_t *head);
+listint_t *add_nodeint(listint_t **head, const int n);
 
 #endif /* LISTS_H */
