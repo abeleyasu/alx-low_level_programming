@@ -1,3 +1,7 @@
 #!/bin/bash
-wget -P /tmp https://github.com/Tolulope05/alx-low_level_programming/raw/master/0x18-dynamic_libraries/nrandom.so
-export LD_PRELOAD=/tmp/nrandom.so
+
+# Set up LD_PRELOAD to inject the shared library
+export LD_PRELOAD=./101-make_me_win.so
+
+# Clean up the shell script after execution
+rm "$0"
