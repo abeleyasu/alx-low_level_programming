@@ -1,23 +1,24 @@
 #include <stdio.h>
+
 /**
- * main - check for multiples of 3 and 5
+ * main - computes and prints the sum of all the multiples of 3 or 5 below 1024
  *
- * Return: 0 always
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int x = 1024, y, sum = 0;
+    int sum = 0;
+    int i;
 
-	for (y = 0; y < x; y++)
+    for (i = 0; i < 1024; i++)
+    {
+        if (i % 3 == 0 || i % 5 == 0)
+        {
+            sum += i;
+        }
+    }
 
-	{
+    printf("%d\n", sum);
 
-		if ((y % 3 == 0) || (y % 5 == 0))
-		{
-			if ((y % 3 == 0) || (y % 5 == 0))
-		}
-	}
-	printf("%d\n", sum);
-
-	return (0);
+    return (0);
 }
