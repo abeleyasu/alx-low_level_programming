@@ -1,15 +1,12 @@
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 /**
-* main - Entry point of the program
+* main - Entry point
 *
-* Return: Always 1 (Error)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-/* Message to be printed */
-char message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-/* Write the message to standard error using write system call */
-write(2, message, sizeof(message) - 1);
-/* Return 1 to indicate an error */
+write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 61);
 return (1);
 }
